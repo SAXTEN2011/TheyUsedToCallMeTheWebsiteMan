@@ -61,16 +61,16 @@
       <file leaf-file-name="confettiTest.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/confettiTest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+            <state relative-caret-position="119">
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1490845693537" expanded="true" signature="5298:5311" ph="..." />
-                <marker date="1490845693537" expanded="true" signature="5298:5336" ph="..." />
-                <marker date="1490845693537" expanded="true" signature="5298:5358" ph="..." />
-                <marker date="1490845693537" expanded="true" signature="5298:6272" ph="..." />
+                <marker date="1490845793359" expanded="true" signature="5311:5324" ph="..." />
+                <marker date="1490845793359" expanded="true" signature="5311:5349" ph="..." />
+                <marker date="1490845793359" expanded="true" signature="5311:5371" ph="..." />
+                <marker date="1490845793359" expanded="true" signature="5311:6285" ph="..." />
               </folding>
             </state>
           </provider>
@@ -247,12 +247,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490835685756</updated>
-      <workItem from="1490835686948" duration="9041000" />
+      <workItem from="1490835686948" duration="9140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9041000" />
+    <option name="totallyTimeSpent" value="9140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -361,16 +361,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/confettiTest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#header#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1490845693537" expanded="true" signature="5298:5311" ph="..." />
-            <marker date="1490845693537" expanded="true" signature="5298:5336" ph="..." />
-            <marker date="1490845693537" expanded="true" signature="5298:5358" ph="..." />
-            <marker date="1490845693537" expanded="true" signature="5298:6272" ph="..." />
+            <marker date="1490845793359" expanded="true" signature="5311:5324" ph="..." />
+            <marker date="1490845793359" expanded="true" signature="5311:5349" ph="..." />
+            <marker date="1490845793359" expanded="true" signature="5311:5371" ph="..." />
+            <marker date="1490845793359" expanded="true" signature="5311:6285" ph="..." />
           </folding>
         </state>
       </provider>
