@@ -71,7 +71,9 @@
             setTimeout(function () {
                 $("h1").addClass("flip");
                 setTimeout(function () {
-                    $("h1").html(genRainbowText("They used to call me the " + nouns[Math.floor(Math.random()*nouns.length + 1)] + " man"));
+                    var rand = nouns[Math.floor(Math.random()*nouns.length + 1)];
+                    $("h1").html(genRainbowText("They used to call me the " + rand + " man"));
+                    $("title").html("They used to call me the " + rand + " man")
                 }, 200);
 
             }, 100);
