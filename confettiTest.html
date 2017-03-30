@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Title</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+</body>
+<style>
+    .particle{
+        width: 25px;
+        height: 25px;
+        /*border-radius: 100%;*/
+        position: absolute;
+        z-index: 1;
+        background-color: red;
+    }
+    body, html{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        function getRandomColor() {
+            let letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++ ) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function random(mult) {
+            return Math.random() * mult
+        }
+
+        class Confetti{
+            constructor(){
+                this.x = Math.random()*innerWidth;
+                this.y = random(innerWidth/2);
+                this.uuid = Math.random().toString().substring(4, 10);
+                this.color = getRandomColor();
+                this.velocity = 0;
+                this.gravity = 0.01;
+                this.possibleUrls = ['http://images.clipartpanda.com/music-notes-clip-art-musical_note_3_clip_art_12287.jpg', 'http://images.clipartpanda.com/single-music-notes-MSC_NOTE1.jpg', 'http://www.ldoceonline.com/media/english/illustration/trumpet.jpg', "https://static.wixstatic.com/media/45c5b7_1e5649a46117475c9d96ac663219d437.jpg_256", "http://media.wwbw.com/is/image/MMGS7/795-Elegante-Vigore-Professional-Series-Open-Hole-Flute-B-Foot-Split-E-C-Trill-D-Roller/J14682000001000-00-180x180.jpg"]
+                this.html;
+                this.html = `<img src="${this.possibleUrls[Math.floor(Math.random()*this.possibleUrls.length)]}" class='particle' id='${this.uuid}' style="margin-left: ${this.x}px; margin-top: ${this.y}` + "px" + `; background-color: ${this.color}"></img>`;
+                this.show = () => {
+                    $("body").append(this.html);
+                };
+                this.hide = () => {
+                    $(`#${this.uuid}`).remove();
+                };
+                this.update = () => {
+                    this.velocity += this.gravity;
+                    this.y += this.velocity;
+                    this.y += random(10);
+                    this.x += (Math.random() < Math.random()) ? random(1) : -random(1);
+
+                    $(`#${this.uuid}`).css("margin-top", this.y+"px");
+                    $(`#${this.uuid}`).css("margin-left", this.x+"px");
+                    if(this.y > innerHeight+120){
+                    this.y = -50;
+                    this.velocity = 0;
+                    }
+                };
+                setInterval(() => {
+                    this.update();
+                }, 10);
+
+            }
+        }
+
+
+        for(let i = 0; i < 50; i++){
+            let test = new Confetti();
+
+            test.show();
+        }
+
+
+
+
+
+
+
+    });
+</script>
+</html>

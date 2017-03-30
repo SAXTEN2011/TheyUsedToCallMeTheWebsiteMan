@@ -18,7 +18,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
@@ -52,7 +52,24 @@
                 <element signature="n#style#0;n#span#25;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#26;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#27;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1490838553248" expanded="true" signature="38:1250" ph="..." />
                 <marker date="1490838553248" expanded="true" signature="3474:3501" ph="..." />
+                <marker date="1490838553248" expanded="true" signature="4235:4302" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confettiTest.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/confettiTest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="70" column="48" lean-forward="true" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+              <folding>
+                <marker date="1490842905059" expanded="true" signature="2839:2852" ph="..." />
+                <marker date="1490842905059" expanded="true" signature="2839:2877" ph="..." />
+                <marker date="1490842905059" expanded="true" signature="2839:2918" ph="..." />
+                <marker date="1490842905059" expanded="true" signature="2839:3844" ph="..." />
               </folding>
             </state>
           </provider>
@@ -62,8 +79,30 @@
         <entry file="file://$PROJECT_DIR$/shake.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="861">
-              <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-              <folding />
+              <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+              <folding>
+                <marker date="1490837403744" expanded="false" signature="0:41" ph="/** Created by Aaron on 3/29/2017. ...*/" />
+                <marker date="1490837403744" expanded="true" signature="42:1314" ph="/*...*/" />
+                <marker date="1490837403744" expanded="true" signature="1329:5252" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="1368:5249" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="1562:1999" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="2379:2477" ph="//..." />
+                <marker date="1490837403744" expanded="true" signature="2530:2753" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="2571:2743" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="2759:4820" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="2813:4809" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="3021:3224" ph="//..." />
+                <marker date="1490837403744" expanded="true" signature="3455:3555" ph="//..." />
+                <marker date="1490837403744" expanded="true" signature="3659:3706" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="3919:3975" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="4219:4460" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="4273:4337" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="4343:4406" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="4538:4762" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="4852:5243" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="4889:5211" ph="{...}" />
+                <marker date="1490837403744" expanded="true" signature="5314:5717" ph="{&quot;debug&quot;: &quot;&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,7 +113,9 @@
             <state relative-caret-position="842">
               <caret line="2282" column="10" lean-forward="false" selection-start-line="2282" selection-start-column="10" selection-end-line="2282" selection-end-column="10" />
               <folding>
-                <element signature="e#0#41#0" expanded="false" />
+                <marker date="1490837057931" expanded="false" signature="0:41" ph="/** Created by Aaron on 3/29/2017. ...*/" />
+                <marker date="1490837057931" expanded="true" signature="133:32589" ph="[...]" />
+                <marker date="1490837057931" expanded="true" signature="32611:130688" ph="[...]" />
               </folding>
             </state>
           </provider>
@@ -84,7 +125,7 @@
         <entry file="file://$USER_HOME$/ILoveThisGuy/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+              <caret line="91" column="13" lean-forward="false" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
               <folding>
                 <marker date="1485581900171" expanded="true" signature="4499:4526" ph="..." />
               </folding>
@@ -97,8 +138,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -108,6 +149,7 @@
         <option value="$PROJECT_DIR$/words.js" />
         <option value="$PROJECT_DIR$/shake.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/confettiTest.html" />
       </list>
     </option>
   </component>
@@ -118,7 +160,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -164,9 +206,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$USER_HOME$/ILoveThisGuy/index.html" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.confettiTest.html">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TheyUsedToCallMe/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="confettiTest.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TheyUsedToCallMe/confettiTest.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -222,12 +268,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.confettiTest.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.confettiTest.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -241,15 +289,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490835685756</updated>
-      <workItem from="1490835686948" duration="2906000" />
+      <workItem from="1490835686948" duration="6268000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2906000" />
+    <option name="totallyTimeSpent" value="6268000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -284,7 +332,7 @@
     <entry file="file://$USER_HOME$/ILoveThisGuy/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <caret line="91" column="13" lean-forward="false" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
           <folding>
             <marker date="1485581900171" expanded="true" signature="4499:4526" ph="..." />
           </folding>
@@ -296,7 +344,9 @@
         <state relative-caret-position="842">
           <caret line="2282" column="10" lean-forward="false" selection-start-line="2282" selection-start-column="10" selection-end-line="2282" selection-end-column="10" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <marker date="1490837057931" expanded="false" signature="0:41" ph="/** Created by Aaron on 3/29/2017. ...*/" />
+            <marker date="1490837057931" expanded="true" signature="133:32589" ph="[...]" />
+            <marker date="1490837057931" expanded="true" signature="32611:130688" ph="[...]" />
           </folding>
         </state>
       </provider>
@@ -304,8 +354,30 @@
     <entry file="file://$PROJECT_DIR$/shake.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="861">
-          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding />
+          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <marker date="1490837403744" expanded="false" signature="0:41" ph="/** Created by Aaron on 3/29/2017. ...*/" />
+            <marker date="1490837403744" expanded="true" signature="42:1314" ph="/*...*/" />
+            <marker date="1490837403744" expanded="true" signature="1329:5252" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="1368:5249" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="1562:1999" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="2379:2477" ph="//..." />
+            <marker date="1490837403744" expanded="true" signature="2530:2753" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="2571:2743" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="2759:4820" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="2813:4809" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="3021:3224" ph="//..." />
+            <marker date="1490837403744" expanded="true" signature="3455:3555" ph="//..." />
+            <marker date="1490837403744" expanded="true" signature="3659:3706" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="3919:3975" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="4219:4460" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="4273:4337" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="4343:4406" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="4538:4762" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="4852:5243" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="4889:5211" ph="{...}" />
+            <marker date="1490837403744" expanded="true" signature="5314:5717" ph="{&quot;debug&quot;: &quot;&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -342,7 +414,22 @@
             <element signature="n#style#0;n#span#25;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#26;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#27;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1490838553248" expanded="true" signature="38:1250" ph="..." />
             <marker date="1490838553248" expanded="true" signature="3474:3501" ph="..." />
+            <marker date="1490838553248" expanded="true" signature="4235:4302" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/confettiTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="70" column="48" lean-forward="true" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+          <folding>
+            <marker date="1490842905059" expanded="true" signature="2839:2852" ph="..." />
+            <marker date="1490842905059" expanded="true" signature="2839:2877" ph="..." />
+            <marker date="1490842905059" expanded="true" signature="2839:2918" ph="..." />
+            <marker date="1490842905059" expanded="true" signature="2839:3844" ph="..." />
           </folding>
         </state>
       </provider>
