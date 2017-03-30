@@ -21,10 +21,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-
+<!--<h1>Test!</h1>-->
+<div class="main">
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header"  style="text-align: center">
+            <div class="mdl-layout__header-row" style="text-align: center">
+                <!-- Title -->
+                <span class="mdl-layout-spacer"></span>
+                <span class="mdl-layout-title">#JumpInTheLine2017</span>
+                <span class="mdl-layout-spacer"></span>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="page-content"><!-- Your content goes here -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kitten_in_Rizal_Park,_Manila.jpg/230px-Kitten_in_Rizal_Park,_Manila.jpg" class="flip">
+            </div>
+        </main>
+    </div>
+</div>
 </body>
 <style>
     .particle{
@@ -32,17 +52,40 @@
         height: 25px;
         /*border-radius: 100%;*/
         position: absolute;
-        z-index: 1;
-        background-color: red;
+        /*background-color: red;*/
+        text-align: left;
+        z-index: 100; !important;
     }
     body, html{
         width: 100%;
         height: 100%;
         overflow: hidden;
+        /*text-align: center;*/
+    }
+    h1{
+        display: inline-block;
+    }
+    .main{
+        width: 99%;
+        height: 99%;
+        text-align: center;
+        display: inline-block;
+        z-index: -1;
     }
 </style>
 <script>
     $(document).ready(function () {
+        let audio = new Audio('http://www.arrpubco.com/count_s45/M724.mp3');
+        audio.play(function () {
+
+        });
+        console.log("beat");
+        let rotDeg = 1;
+        setInterval(function () {
+            rotDeg = rotDeg * -1;
+            console.log("beat");
+            $(".flip").css("transform", "scaleX(" + rotDeg + ")")
+        }, 525);
         function getRandomColor() {
             let letters = '0123456789ABCDEF';
             let color = '#';
@@ -64,11 +107,11 @@
                 this.color = getRandomColor();
                 this.velocity = 0;
                 this.gravity = 0.01;
-                this.possibleUrls = ['http://images.clipartpanda.com/music-notes-clip-art-musical_note_3_clip_art_12287.jpg', 'http://images.clipartpanda.com/single-music-notes-MSC_NOTE1.jpg', 'http://www.ldoceonline.com/media/english/illustration/trumpet.jpg', "https://static.wixstatic.com/media/45c5b7_1e5649a46117475c9d96ac663219d437.jpg_256", "http://media.wwbw.com/is/image/MMGS7/795-Elegante-Vigore-Professional-Series-Open-Hole-Flute-B-Foot-Split-E-C-Trill-D-Roller/J14682000001000-00-180x180.jpg"]
+                this.possibleUrls = ['https://img.clipartfest.com/1f031a1d630cf45bdf3c7a48dd769b6c_music-notes-clip-art-music-note-clipart-transparent-background_744-1052.svg', 'http://images.clipartpanda.com/music-note-clip-art-transparent-background-abTyz5jiL.png', 'https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/11/brass-silver-trumpet-transparent-background.png?fit=590%2C326', "http://www.kanstul.com/instrument/BackgroundBrass_985-L.png", "http://www.pngall.com/wp-content/uploads/2016/06/Flute-PNG.png", "https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6005.png?alt=media&token=c75a5cc7-65b4-4f45-b49a-f2a21195818e", "https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6003.png?alt=media&token=1c118dda-1c0f-47b5-ad9c-bf42158eedd2"];
                 this.html;
-                this.html = `<img src="${this.possibleUrls[Math.floor(Math.random()*this.possibleUrls.length)]}" class='particle' id='${this.uuid}' style="margin-left: ${this.x}px; margin-top: ${this.y}` + "px" + `; background-color: ${this.color}"></img>`;
+                this.html = `<img src="${this.possibleUrls[Math.floor(Math.random()*this.possibleUrls.length)]}" class='particle' id='${this.uuid}' style="margin-left: ${this.x}px; margin-top: ${this.y}` + "px" + `;"></img>`;
                 this.show = () => {
-                    $("body").append(this.html);
+                    $("body").prepend(this.html);
                 };
                 this.hide = () => {
                     $(`#${this.uuid}`).remove();
@@ -81,7 +124,7 @@
 
                     $(`#${this.uuid}`).css("margin-top", this.y+"px");
                     $(`#${this.uuid}`).css("margin-left", this.x+"px");
-                    if(this.y > innerHeight+120){
+                    if(this.y > innerHeight+200){
                     this.y = -50;
                     this.velocity = 0;
                     }
