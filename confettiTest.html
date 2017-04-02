@@ -32,7 +32,7 @@
 <div class="main">
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header"  style="text-align: center">
+        <header class="mdl-layout__header  mdl-color--orange-500"  style="text-align: center">
             <div class="mdl-layout__header-row" style="text-align: center">
                 <!-- Title -->
                 <span class="mdl-layout-spacer"></span>
@@ -42,7 +42,11 @@
         </header>
         <main class="mdl-layout__content">
             <div class="page-content"><!-- Your content goes here -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kitten_in_Rizal_Park,_Manila.jpg/230px-Kitten_in_Rizal_Park,_Manila.jpg" class="flip">
+                <img class="flip hailey" src="https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6021.PNG?alt=media&token=74d944a6-502d-4152-8866-072caad0fc21">
+                <img class="flip" src="https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6019.PNG?alt=media&token=d2ae6ff6-04a7-4cdd-b603-d0354ac4a634">
+                <img class="flip" src="https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6020.PNG?alt=media&token=5360d8de-09a8-488e-8057-3558b2536653">
+
+
             </div>
         </main>
     </div>
@@ -56,7 +60,7 @@
         position: absolute;
         /*background-color: red;*/
         text-align: left;
-        z-index: 100; !important;
+        z-index: 100; !important;!important;!important;!important;!important;!important;!important;
     }
     body, html{
         width: 100%;
@@ -74,6 +78,13 @@
         display: inline-block;
         z-index: -1;
     }
+    main{
+        padding-top: 1%;
+    }
+    .flip{
+        width: 25%;
+        height: 25%;
+    }
 </style>
 <script>
     $(document).ready(function () {
@@ -86,11 +97,12 @@
         wavesurfer.on('ready', function () {
             wavesurfer.play();
             console.log("beat");
-            let rotDeg = 1;
+            let rotDeg = 15;
             setInterval(function () {
+                console.log($(".flip").css("transform"));
                 rotDeg = rotDeg * -1;
                 console.log("beat");
-                $(".flip").css("transform", "scaleX(" + rotDeg + ")")
+                $(".flip").css("transform", "rotate(" + rotDeg + "deg)")
             }, 525);
         });
 
