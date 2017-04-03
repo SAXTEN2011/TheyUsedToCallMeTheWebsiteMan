@@ -55,6 +55,7 @@
         createCanvas(innerWidth, innerHeight);
 //        background("#ff0000");
         let holding = false;
+        let holdingDown = false;
         $(document).keydown(function (e) {
             holding = true;
             if(e.keyCode === 38){
@@ -75,7 +76,12 @@
                         clearInterval(jump);
                         let fall = setInterval(function () {
                             if(dY < innerHeight/2 - 101){
-                                dY += 5;
+                                if(holdingDown){
+                                    dY += 20;
+                                }else{
+                                    dY += 5;
+                                }
+
                             }else{
                                 clearInterval(fall);
                                 jumping = false;
@@ -86,12 +92,23 @@
                     }, 350);
 
                 }
+            }else if(e.keyCode === 40){
+                holdingDown = true;
             }
         });
 
         $(document).keyup(function (e) {
+            if(e.keyCode === 38) {
                 holding = false;
                 console.log("not holding");
+            }
+        });
+
+        $(document).keyup(function (e) {
+            if(e.keyCode === 40) {
+                holdingDown = false;
+                console.log("not holding down");
+            }
         });
 
 
