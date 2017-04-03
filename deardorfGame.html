@@ -121,8 +121,6 @@ for(let p = 0; p < 1; p++){
                 }
 
             if(pillars[i].xPush < innerWidth - 60 && pillars[i].xPush > innerWidth - 120 && dY > initdY - current.height){
-                console.log("hit?");
-                background(255,0,0);
                 alert("You lose! You jumped over " + score + " pillars");
                 window.location.reload();
             }
