@@ -34,6 +34,9 @@
 </style>
 <script>
     'use strict';
+    if(window.localStorage.getItem("highScore") === undefined){
+        window.localStorage.setItem("highScore", 0);
+    }
     let dedo;
     let test;
     let pillars = [];
@@ -41,6 +44,7 @@
     let initdY = (innerHeight/2) - 101;
     let pY = (innerHeight/2);
     let lineY = innerHeight/2;
+    let max = window.localStorage.getItem("highScore");
     function preload() {
 
         dedo = loadImage("./IMG_6003.png");
@@ -138,7 +142,13 @@ for(let p = 0; p < 1; p++){
                 }
 
             if(pillars[i].xPush < innerWidth - 60 && pillars[i].xPush > innerWidth - 120 && dY > initdY - current.height){
-                alert("You lose! You jumped over " + score + " pillars");
+                    if(score > max){
+                        window.localStorage.setItem("highScore", score);
+                        alert("You lose! You jumped over " + score + " pillars. A new high score! 🙌");
+                    }else{
+                        alert("You lose! You jumped over " + score + " pillars. Your high score is " + max);
+                    }
+
                 window.location.reload();
             }
             fill(0,0,0);
