@@ -98,7 +98,7 @@
 
         setInterval(function () {
 
-            if(Math.random() > 0.6){
+            if(Math.random() > 0.4){
                 let gfew = {
                     height: Math.floor(Math.random() * 100) + 1,
                     xPush: 0
@@ -133,12 +133,34 @@ for(let p = 0; p < 1; p++){
         line(0, height/2+2, width, height/2+2);
         image(dedo, 50, dY, 100, 100);
         for(let i = 0; i < pillars.length; i++){
+            if(pillars[i] === undefined){
+                let ewf = {
+                    height: Math.floor(Math.random() * 100) + 1,
+                    xPush: 0
+                };
+                pillars.push(efw);
+            }
+
             let current = pillars[i];
 //                console.log(dY);
             pillars[i].xPush += (5 + speedMod);
                 if(pillars[i].xPush > innerWidth){
-                    pillars.splice(0,1);
-                    score++;
+                    if(pillars[0] === undefined){
+                        let gfe = {
+                            height: Math.floor(Math.random() * 100) + 1,
+                            xPush: 0
+                        };
+                        pillars.push(gfe);
+                    }else{
+                        if(pillars.length > 4){
+                            pillars.splice(0,1);
+                        }else{
+                            pillars[i].xPush = 0;
+                        }
+
+                        score++;
+                    }
+
                 }
 
             if(pillars[i].xPush < innerWidth - 60 && pillars[i].xPush > innerWidth - 120 && dY > initdY - current.height){
