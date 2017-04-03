@@ -21,46 +21,118 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="./js/bootstrap.min.js"></script>
-
+    <script src="./p5.js"></script>
 </head>
-<body onresize=" setDedo(); setGround();">
-<div class="ground">
-    <div class="deardorf">
-        <img src="https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6003.png?alt=media&token=1c118dda-1c0f-47b5-ad9c-bf42158eedd2" width="100%" height="100%">
-    </div>
-    <
-    <hr>
-</div>
+<body>
 
 </body>
 <style>
-    html, body{
-        width: 100%;
-        overflow: hidden;
-        height: 100%;
-    }
     body{
         margin: 0;
+        overflow: hidden;
     }
-    .deardorf{
-        display: inline-block;
-    }
-
 </style>
 <script>
-    $(document).ready(function () {
-        let height = window.innerHeight;
-        $(".ground").css("margin-top", height/4 + "px");
-        setDedo();
-    });
-    
-    function setGround() {
-        let height = window.innerHeight;
-        $(".ground").css("margin-top", (height/2) - ($(".deardorf").height) + "px");
+    'use strict';
+    let dedo;
+    let test;
+    let pillars = [];
+    let dY = (innerHeight/2) - 101;
+    let initdY = (innerHeight/2) - 101;
+    let pY = (innerHeight/2);
+    let lineY = innerHeight/2;
+    function preload() {
+
+        dedo = loadImage("./IMG_6003.png");
+    }
+    let jumping = false;
+
+    function setup() {
+        createCanvas(innerWidth, innerHeight);
+//        background("#ff0000");
+        $(document).keydown(function (e) {
+            if(e.keyCode === 38){
+                if(jumping === false){
+                    jumping = true;
+                    let jump = setInterval(function () {
+                        dY -= 5;
+                    },10);
+                    setTimeout(function () {
+                        clearInterval(jump);
+                        let fall = setInterval(function () {
+                            dY += 5;
+                        },10);
+                        setTimeout(function () {
+                            clearTimeout(fall);
+                            jumping = false;
+                            dY = (innerHeight/2) - 101;
+                        }, 350);
+                    }, 350);
+
+                }
+            }
+        });
+
+
+
+        setInterval(function () {
+
+            if(Math.random() > 0.6){
+                let gfew = {
+                    height: Math.floor(Math.random() * 100) + 1,
+                    xPush: 0
+                };
+                pillars.push(gfew);
+            }
+
+        }, 500);
     }
 
-    function setDedo() {
-        $(".deardorf").css("height", window.innerHeight/6 + "px").css("width", window.innerHeight/6 + "px");
+    let speedMod = 0;
+    setInterval(function () {
+        speedMod++;
+    }, 5000);
+
+for(let p = 0; p < 1; p++){
+    let wqcwef = {
+        height: Math.floor(Math.random() * 100) + 1,
+        xPush: 0
+    };
+    pillars[pillars.length] = wqcwef;
+
+}
+
+    let score = 0;
+    function draw() {
+        background(255);
+
+
+        test = line(0, lineY, width, height/2);
+        line(0, height/2+1, width, height/2+1);
+        line(0, height/2+2, width, height/2+2);
+        image(dedo, 50, dY, 100, 100);
+        for(let i = 0; i < pillars.length; i++){
+            let current = pillars[i];
+//                console.log(dY);
+            pillars[i].xPush += (5 + speedMod);
+                if(pillars[i].xPush > innerWidth){
+                    pillars.splice(0,1);
+                    score++;
+                }
+
+            if(pillars[i].xPush < innerWidth - 60 && pillars[i].xPush > innerWidth - 120 && dY > initdY - current.height){
+                console.log("hit?");
+                background(255,0,0);
+                alert("You lose! You jumped over " + score + " pillars");
+                window.location.reload();
+            }
+            fill(0,0,0);
+            rect(innerWidth-current.xPush, pY-current.height, 20, current.height);
+
+
+        }
+
+
     }
 </script>
 </html>
