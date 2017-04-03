@@ -46,31 +46,48 @@
         dedo = loadImage("./IMG_6003.png");
     }
     let jumping = false;
-
+    let onGround = true;
     function setup() {
         createCanvas(innerWidth, innerHeight);
 //        background("#ff0000");
+        let holding = false;
         $(document).keydown(function (e) {
+            holding = true;
             if(e.keyCode === 38){
                 if(jumping === false){
                     jumping = true;
                     let jump = setInterval(function () {
-                        dY -= 5;
+                        console.log(dY);
+                        if(holding){
+                            dY -= 7;
+                        }else{
+                            dY -= 5;
+                        }
+
                     },10);
+
                     setTimeout(function () {
+
                         clearInterval(jump);
                         let fall = setInterval(function () {
-                            dY += 5;
+                            if(dY < innerHeight/2 - 101){
+                                dY += 5;
+                            }else{
+                                clearInterval(fall);
+                                jumping = false;
+                            }
+
                         },10);
-                        setTimeout(function () {
-                            clearTimeout(fall);
-                            jumping = false;
-                            dY = (innerHeight/2) - 101;
-                        }, 350);
+
                     }, 350);
 
                 }
             }
+        });
+
+        $(document).keyup(function (e) {
+                holding = false;
+                console.log("not holding");
         });
 
 
