@@ -166,18 +166,10 @@
         let clicks = 0;
         let last = clicks;
         $(".hailey").click( () => {
-            last = clicks;
-            setTimeout(function () {
-                if(last == clicks - 1){
-                    alert("timeout");
-                }
-            }, 1000);
             clicks++;
             if(clicks === 5){
                 window.location.assign("./deardorfGame.html");
             }
-
-
         });
 
 
