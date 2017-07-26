@@ -89,9 +89,9 @@
 </style>
 <script>
     $(document).ready(function () {
-        if (location.protocol === 'https:') {
-            window.location.protocol = 'http:'
-        };
+//        if (location.protocol === 'https:') {
+//            window.location.protocol = 'http:'
+//        };
         const wavesurfer = WaveSurfer.create({
             container: '#waveform',
             waveColor: 'violet',
@@ -131,7 +131,7 @@
                 this.color = getRandomColor();
                 this.velocity = 0;
                 this.gravity = 0.01;
-                this.possibleUrls = ['http://cliparting.com/wp-content/uploads/2016/06/Music-notes-music-note-clip-art-transparent-clipart-image-2-2.png', 'http://images.clipartpanda.com/music-note-clip-art-transparent-background-abTyz5jiL.png', 'https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/11/brass-silver-trumpet-transparent-background.png?fit=590%2C326', "https://welltempered.files.wordpress.com/2013/03/tuba.jpg", "http://www.pngall.com/wp-content/uploads/2016/06/Flute-PNG.png", "./IMG_6005.png", "./IMG_6003.png"];
+                this.possibleUrls = ['./pics/note1.png', './pics/note2.png', 'https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/11/brass-silver-trumpet-transparent-background.png?fit=590%2C326', "https://welltempered.files.wordpress.com/2013/03/tuba.jpg", "./pics/download.jpg", "./IMG_6005.png", "./IMG_6003.png"];
                 this.html;
                 this.html = `<img src="${this.possibleUrls[Math.floor(Math.random()*this.possibleUrls.length)]}" class='particle' id='${this.uuid}' style="margin-left: ${this.x}px; margin-top: ${this.y}` + "px" + `;"></img>`;
                 this.show = () => {
