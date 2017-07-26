@@ -43,9 +43,9 @@
         </header>
         <main class="mdl-layout__content">
             <div class="page-content"><!-- Your content goes here -->
-                <img class="flip hailey" src="https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6021.PNG?alt=media&token=74d944a6-502d-4152-8866-072caad0fc21">
-                <img class="flip hailey" src="https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6019.PNG?alt=media&token=d2ae6ff6-04a7-4cdd-b603-d0354ac4a634">
-                <img class="flip" src="https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6020.PNG?alt=media&token=5360d8de-09a8-488e-8057-3558b2536653">
+                <img class="flip hailey" src="./pics/Untitled-2.png">
+                <img class="flip hailey" src="./pics/Untitled-3.png">
+                <img class="flip"        src="./pics/Untitled-4.png">
 
 
             </div>
@@ -89,6 +89,9 @@
 </style>
 <script>
     $(document).ready(function () {
+        if (location.protocol === 'https:') {
+            window.location.protocol = 'http:'
+        };
         const wavesurfer = WaveSurfer.create({
             container: '#waveform',
             waveColor: 'violet',
@@ -128,7 +131,7 @@
                 this.color = getRandomColor();
                 this.velocity = 0;
                 this.gravity = 0.01;
-                this.possibleUrls = ['https://img.clipartfest.com/1f031a1d630cf45bdf3c7a48dd769b6c_music-notes-clip-art-music-note-clipart-transparent-background_744-1052.svg', 'http://images.clipartpanda.com/music-note-clip-art-transparent-background-abTyz5jiL.png', 'https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/11/brass-silver-trumpet-transparent-background.png?fit=590%2C326', "http://www.kanstul.com/instrument/BackgroundBrass_985-L.png", "http://www.pngall.com/wp-content/uploads/2016/06/Flute-PNG.png", "https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6005.png?alt=media&token=c75a5cc7-65b4-4f45-b49a-f2a21195818e", "https://firebasestorage.googleapis.com/v0/b/derekgenerator-4f282.appspot.com/o/images%2FIMG_6003.png?alt=media&token=1c118dda-1c0f-47b5-ad9c-bf42158eedd2"];
+                this.possibleUrls = ['http://cliparting.com/wp-content/uploads/2016/06/Music-notes-music-note-clip-art-transparent-clipart-image-2-2.png', 'http://images.clipartpanda.com/music-note-clip-art-transparent-background-abTyz5jiL.png', 'https://i0.wp.com/freepngimages.com/wp-content/uploads/2015/11/brass-silver-trumpet-transparent-background.png?fit=590%2C326', "https://welltempered.files.wordpress.com/2013/03/tuba.jpg", "http://www.pngall.com/wp-content/uploads/2016/06/Flute-PNG.png", "./IMG_6005.png", "./IMG_6003.png"];
                 this.html;
                 this.html = `<img src="${this.possibleUrls[Math.floor(Math.random()*this.possibleUrls.length)]}" class='particle' id='${this.uuid}' style="margin-left: ${this.x}px; margin-top: ${this.y}` + "px" + `;"></img>`;
                 this.show = () => {
